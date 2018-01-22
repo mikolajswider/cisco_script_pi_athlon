@@ -10,7 +10,7 @@ import datetime
 
 def old_url():
     l=[]
-    with open ("/home/pi/Sunfounder_Smart_Video_Car_Kit_for_RaspberryPi/server/ngrok_url.txt", 'r') as f:
+    with open ("/home/pi/pi-athlon/server/ngrok_url.txt", 'r') as f:
         for line in f:
             l.append(line.rstrip('\n'))
     f.close()
@@ -37,7 +37,7 @@ def main():
     if oldurl!=newurl:
         #spark.update_webhook(token,webhook_Id, newurl[0])
         spark.message(room_id, token, newurl[0])
-        with open ("/home/pi/Sunfounder_Smart_Video_Car_Kit_for_RaspberryPi/server/ngrok_url.txt", 'w') as f:
+        with open ("/home/pi/pi-athlon/server/ngrok_url.txt", 'w') as f:
             f.write(newurl[0])
         f.close()
     

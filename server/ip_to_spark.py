@@ -12,7 +12,7 @@ import spark
 
 def old_ip():
     l=[]
-    with open ("/home/pi/Sunfounder_Smart_Video_Car_Kit_for_RaspberryPi/server/ip.txt", 'r') as f:
+    with open ("/home/pi/pi-athlon/server/ip.txt", 'r') as f:
         for line in f:
             l.append(line.rstrip('\n'))
     f.close()
@@ -42,7 +42,7 @@ def main():
     
     if oldip!=newip:
         spark.message(room_id, token, newip[0])
-        with open ("/home/pi/Sunfounder_Smart_Video_Car_Kit_for_RaspberryPi/server/ip.txt", 'w') as f:
+        with open ("/home/pi/pi-athlon/server/ip.txt", 'w') as f:
             f.write(newip[0])
         f.close()
         

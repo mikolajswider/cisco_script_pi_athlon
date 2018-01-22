@@ -99,13 +99,13 @@ while True:
 			video_dir.x_90_r()
 		elif data == ctrl_cmd[15]:
 			print 'ntp'
-			subprocess.call('/home/pi/Sunfounder_Smart_Video_Car_Kit_for_RaspberryPi/server/set_ntp.sh') # set_ntp.sh sets the ntp when outside of blizzard network
+			subprocess.call('/home/pi/pi-athlon/server/set_ntp.sh') # set_ntp.sh sets the ntp when outside of blizzard network
 		elif data == ctrl_cmd[16]:
 			print 'ntp_cisco'
-			subprocess.call('/home/pi/Sunfounder_Smart_Video_Car_Kit_for_RaspberryPi/server/set_ntp_cisco.sh') # set_ntp_cisco sets the ntp when inside of blizzard network
+			subprocess.call('/home/pi/pi-athlon/server/set_ntp_cisco.sh') # set_ntp_cisco sets the ntp when inside of blizzard network
 		elif data == ctrl_cmd[17]:
 			print 'pic'
-			subprocess.call('/home/pi/Sunfounder_Smart_Video_Car_Kit_for_RaspberryPi/server/take_a_picture.sh') # take_a_pictures uses the webcam connected to the robot to take a picture and store it
+			subprocess.call('/home/pi/pi-athlon/server/take_a_picture.sh') # take_a_pictures uses the webcam connected to the robot to take a picture and store it
 		elif data == ctrl_cmd[18]:
 			print 'spark_start'
                         spark.start()
