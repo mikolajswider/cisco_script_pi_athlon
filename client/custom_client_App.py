@@ -221,8 +221,8 @@ Btn14 = Button(top, width=10, text='Spark Finish (0)', bg='green')
 Btn15 = Button(top, width=10, text='Set NTP', bg='grey')
 Btn16 = Button(top, width=10, text='Set NTP (Cisco)', bg='grey')
 #Btn17 = Button(top, width=10, text='Laser Off. (r)', bg='red')
-Btn18 = Button(top, width=10, text='Camera 90 Left (u)', bg='orange')
-Btn19 = Button(top, width=10, text='Camera 90 Right (o)', bg='orange')
+Btn18 = Button(top, width=12, text='Camera 90 Left (u)', bg='orange')
+Btn19 = Button(top, width=12, text='Camera 90 Right (o)', bg='orange')
 Btn20 = Button(top, width=10, text='Challenge 2 ', bg='red')
 # =============================================================================
 # Buttons layout in a new column
