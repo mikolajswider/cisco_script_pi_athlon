@@ -92,9 +92,30 @@ def finish():
         i=i+1
         command="sudo rm "+path+picture
         os.system(command)
-
+        
 def update_webhook(token,webhook_Id,url):
     header = {"Accept" : "application/json","Content-Type":"application/json","Authorization": "Bearer " + token}  # define the header which will allow mgs3X-Robot to communicate with Spark
     body = {"targetUrl": url}
     body = json.dumps(body)#body needs to be a sring
     response = requests.put('https://api.ciscospark.com/v1/webhooks/'+webhook_Id, data=body, headers=header)
+'''
+def sendSparkGET(url):
+    headers={"Accept" : "application/json", "Content-Type":"application/json", "Authorization" : "Bearer "+ webhookToken }
+    data = requests.get(url, headers=headers).json()
+    return data
+
+def sendSparkPOST(url, data):
+    headers={"Accept" : "application/json", "Content-Type":"application/json", "Authorization" : "Bearer "+ webhookToken }
+    data = json.dumps(data)
+    content = requests.post(url, headers=headers, data=data).json()
+    return content
+
+def sendMessage(text, webhook):
+    if webhook['data']['personEmail'] != bot_email:
+    contents = sendSparkPOST("https://api.ciscospark.com/v1/messages", {"roomId": webhook['data']['roomId'], "markdown": text,"text": "cos"})
+    contents = ''
+    return contents
+'''
+    
+    
+    
