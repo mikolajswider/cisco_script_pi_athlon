@@ -12,16 +12,16 @@ import json
 
 
 def mgs3x_token():
-    return 'YWU0OTQxMDEtZTIyYi00MmI3LWJkNjgtODljZTkwZDMzNTg5MTc1MGJhN2YtYzk4'
+    return 'xxx'
 
 def mgs3x_room_id():
-    return 'Y2lzY29zcGFyazovL3VzL1JPT00vMWQ3ZDg4YjAtNWMxZS0xMWU3LWIzNTktYTVhMGJkZjcyMTJm'
+    return 'xxx'
 
 def pi_athlon_room_id():
-    return 'Y2lzY29zcGFyazovL3VzL1JPT00vNDU3Y2E5YTAtYmIxMy0xMWU3LWExNTgtZjNhOGIxZjBiYmUz'
+    return 'xxx'
 
 def mgs3x_webhook_id():
-    return 'Y2lzY29zcGFyazovL3VzL1dFQkhPT0svMmQ0NTY4OWQtNzNjMC00MGQyLWIwMGItZjg2ODhiZTk0Nzg0'
+    return 'xxx'
 
 
 def start():
